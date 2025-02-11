@@ -44,6 +44,23 @@ app.post("/webhook", async (req, res) => {
       buttons.push([{ text: "🔍 View Changes", url: payload.compare }]);
       break;
 
+    case "ping":
+      message = "🏓 <b>Ping Event Received</b>\nGitHub Webhook is active!";
+      break;
+
+    case "star":
+      message =
+        `⭐ <b>New Star</b>\n` +
+        `👤 <a href="${payload.sender.html_url}">${payload.sender.login}</a> starred <a href="${payload.repository.html_url}">${payload.repository.full_name}</a>\n` +
+        `✨ Total Stars: <b>${payload.repository.stargazers_count}</b>`;
+      buttons.push([
+        {
+          text: "🌟 View Stars",
+          url: `${payload.repository.html_url}/stargazers`,
+        },
+      ]);
+      break;
+
     case "fork":
       message =
         `🍴 <b>New Repository Forked</b>\n` +
