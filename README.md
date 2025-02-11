@@ -14,8 +14,9 @@ It listens to GitHub webhook events and sends _very important_ updates to your T
 - **Forks & Stars** – You’ll finally know when your repo gets some love (or pity stars).
 - **Issues & PRs** – Keeping track of bugs and feature requests like a boss.
 - **Releases & Security Alerts** – Because you totally read those security advisories, right?
+- **Ping & Star Events** – Now you can see GitHub say "Hello" and track repo appreciation.
 
-## 🛠 Setup (Brace Yourself)
+## 🤦‍♂️ Setup (Brace Yourself)
 
 1. **Get a Telegram Bot Token**
 
@@ -38,7 +39,7 @@ It listens to GitHub webhook events and sends _very important_ updates to your T
      ```
    - Watch it scream (or work, if you’re lucky).
 
-## 📜 Webhook Event Support (A.K.A. What It Understands)
+## 🌟 Webhook Event Support (A.K.A. What It Understands)
 
 | Event Type          | What Happens                                                                        |
 | ------------------- | ----------------------------------------------------------------------------------- |
@@ -51,6 +52,8 @@ It listens to GitHub webhook events and sends _very important_ updates to your T
 | `release`           | Tells you when you ship a new release (that nobody will update to)                  |
 | `repository`        | Alerts when the repo settings change (because why not?)                             |
 | `security_advisory` | Yells at you when security issues arise (which you should definitely fix)           |
+| `ping`              | Confirms that the webhook is working                                                |
+| `star`              | Alerts when your repo gets some extra love 🌟                                       |
 
 ## 📌 Environment Variables (Because Hardcoding Is Bad, Apparently)
 
@@ -61,7 +64,7 @@ BOT_TOKEN=your_telegram_bot_token
 CHAT_ID=your_telegram_chat_id
 ```
 
-## 🧐 License
+## 🤔 License
 
 MIT. Because even bad code deserves freedom.
 
@@ -80,7 +83,7 @@ MIT. Because even bad code deserves freedom.
 
 ---
 
-## 📜 Code Documentation (Because I Had to Explain My Madness)
+## 🌟 Code Documentation (Because I Had to Explain My Madness)
 
 ### `sendMessage(message, buttons = [])`
 
