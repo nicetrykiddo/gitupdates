@@ -68,6 +68,12 @@ app.post("/webhook", async (req, res) => {
         `📌 Forked to: <a href="${payload.forkee.html_url}">${payload.forkee.full_name}</a>`;
       break;
 
+    case "meta":
+      message =
+        `🔧 <b>Meta Event</b>\n` +
+        `👀 System-level changes detected in <a href="${payload.repository.html_url}">${payload.repository.full_name}</a>`;
+      break;
+
     case "watch":
       message =
         `⭐ <b>New Star</b>\n` +
