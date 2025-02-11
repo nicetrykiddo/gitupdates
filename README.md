@@ -41,19 +41,20 @@ It listens to GitHub webhook events and sends _very important_ updates to your T
 
 ## 🌟 Webhook Event Support (A.K.A. What It Understands)
 
-| Event Type          | What Happens                                                                        |
-| ------------------- | ----------------------------------------------------------------------------------- |
-| `push`              | Sends commit details with a fancy compare button                                    |
-| `fork`              | Alerts when your repo gets cloned by an open-source enthusiast (or a script kiddie) |
-| `watch`             | Notifies when someone stars your repo (probably by mistake)                         |
-| `issues`            | Lets you know when someone reports a bug you’ll ignore for months                   |
-| `issue_comment`     | Shows comments on issues because opinions matter (sometimes)                        |
-| `pull_request`      | Updates when a PR is created, merged, or closed (aka "Merge it already!")           |
-| `release`           | Tells you when you ship a new release (that nobody will update to)                  |
-| `repository`        | Alerts when the repo settings change (because why not?)                             |
-| `security_advisory` | Yells at you when security issues arise (which you should definitely fix)           |
-| `ping`              | Confirms that the webhook is working                                                |
-| `star`              | Alerts when your repo gets some extra love 🌟                                       |
+| Event Type          | What Happens                                                                           |
+| ------------------- | -------------------------------------------------------------------------------------- |
+| `push`              | Sends commit details with a fancy compare button                                       |
+| `fork`              | Alerts when your repo gets cloned by an open-source enthusiast (or a script kiddie)    |
+| `watch`             | Notifies when someone stars your repo (probably by mistake)                            |
+| `issues`            | Lets you know when someone reports a bug you’ll ignore for months                      |
+| `issue_comment`     | Shows comments on issues because opinions matter (sometimes)                           |
+| `pull_request`      | Updates when a PR is created, merged, or closed (aka "Merge it already!")              |
+| `release`           | Tells you when you ship a new release (that nobody will update to)                     |
+| `repository`        | Alerts when the repo settings change (because why not?)                                |
+| `security_advisory` | Yells at you when security issues arise (which you should definitely fix)              |
+| `ping`              | Confirms that the webhook is working                                                   |
+| `star`              | Alerts when your repo gets some extra love ⭐🎉                                        |
+| `meta`              | Reports system-level changes in GitHub like repo renames or user permission updates 🔧 |
 
 ## 📌 Environment Variables (Because Hardcoding Is Bad, Apparently)
 
